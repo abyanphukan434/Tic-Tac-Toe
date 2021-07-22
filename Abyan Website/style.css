@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: #131419;
+}
+
+#container {
+    width: auto;
+    height: auto;
+    background: linear-gradient(to bottom, #2b2d47 10%, #181926);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: inset 1px 2px 0px rgb(255 255 255 / 18%), inset -2px -2px 2px rgb(0 0 0 / 65%);
+}
+
+#startingPage {
+    width: 400px;
+    height: 220px;
+}
+
+#startingPage h2,
+#winner h2 {
+    font-size: 50px;
+    color: #cdcfdb;
+}
+
+#startingPage #line {
+    width: 100%;
+    height: 1px;
+    background: #c3cfdb;
+    margin: 20px 0;
+}
+
+#startingPage h4 {
+    font-size: 25px;
+    color: #b9b9c5;
+}
+
+#startingPage #button {
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+#button button {
+    width: 180px;
+    height: 55px;
+    cursor: pointer;
+    background: #29cde0;
+    border: none;
+    outline: none;
+    color: #2b2d47;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: 0.5s;
+    box-shadow: 2px 2px 2px rgb(255 255 255 / 26%), -2px -2px 5px rgb(0 0 0 / 87%);
+}
+
+#button button:first-child {
+    margin-right: 40px;
+}
+
+#startingPage #button button:hover, 
+#winner #button button:hover {
+    transform: scale(0.90);
+}
+
+#winner {
+    display: none;
+}
+
+#winner #button {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#winner #button button {
+    margin-top: 20px;
+}
+
+#mainPage {
+    width: 350px;
+    height: 550px;
+    padding: 20px;
+    position: relative;
+    display: none;
+}
+
+#mainPage #headerBtns {
+    width: 310px;
+    height: 60px;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 2px 2px 2px rgb(255 255 255 / 26%), -2px -2px 5px rgb(0 0 0 / 87%);
+}
+
+#mainPage #headerBtns button {
+    width: 160px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.60);
+}
+
+#mainPage #headerBtns #O_Turn {
+    left: 160px;
+    z-index: 3;
+}
+
+#showChange {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160px;
+    height: 60px;
+    border-radius: 50px;
+    background: #29cde0;
+    z-index: 1;
+    transition: 0.2s;
+}
+
+#gameBoard {
+    width: 330px;
+    height: 400px;
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 15px;
+}
+
+.boxes {
+    width: 100px;
+    height: 100px;
+    box-shadow: 2px 2px 2px rgb(255 255 255 / 26%), -2px -2px 5px rgb(0 0 0  / 87%);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.boxes i {
+    font-size: 60px;
+    color: #29cde0;
+}

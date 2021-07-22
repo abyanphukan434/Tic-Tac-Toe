@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tic Tac Toe</title>
+        <link rel = "icon" href = "https://play-lh.googleusercontent.com/7k1wSfnstoNib_lmlfIfFTcHOE4oypb-mmuzvhPLpfFRz55CnNJFagyd6u6G4fFrlDI" type = "image/x-icon">
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <link href = "style.css" rel = "stylesheet">
+        <link href = "css/all.min.css" rel = "stylesheet">
+    </head>
+    <body>
+        <div id = "container">
+            <div id = "startingPage">
+                <h2>Tic Tac Toe</h2>
+                <div id = "line"></div>
+                <h4>Select Which You Want To Be?</h4>
+                <div id = "button">
+                    <button id = "playerX" class = "choose">Player ( X )</button>
+                    <button id = "playerO" class = "choose">Player ( O )</button>
+                </div>
+            </div>
+            <div id = "mainPage">
+                <div id = "headerBtns">
+                    <button id = "">X Turn</button>
+                    <button id = "O_Turn">O Turn</button>
+                    <div id = "showChange"></div>
+                </div>
+                <div id = "gameBoard">
+                    <div class = "boxes"></div>
+                    <div class = "boxes"></div>
+                    <div class = "boxes"></div>
+                    <div class = "boxes"></div>
+                    <div class = "boxes"></div>
+                    <div class = "boxes"></div>
+                    <div class = "boxes"></div>
+                    <div class = "boxes"></div>
+                    <div class = "boxes"></div>
+                </div>
+            </div>
+            <div id = "winner">
+                <h2 id = "winnerName">Player X Wins The Game!</h2>
+                <div id = "button">
+                    <button id = "quit">Play Again</button>
+                </div>
+            </div>
+        </div>
+        <script src = "main.js"></script>
+    </body>
+</html>
